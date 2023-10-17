@@ -1,0 +1,140 @@
+/* Reset some default browser styles */
+body, h1, h2, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set up the main container */
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas:
+        "header sidebar"
+        "main sidebar"
+        "footer sidebar";
+    gap: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+/* Header styles */
+.header {
+    grid-area: header;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 24px;
+}
+
+.header h6 {
+    font-size: 14px;
+}
+
+/* Main content styles */
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Article styles */
+.article {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.article img {
+    max-width: 100%;
+    height: auto;
+}
+
+.articlecontent {
+    padding: 10px;
+}
+
+.articlecontent h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.articlecontent p {
+    font-size: 14px;
+}
+
+/* Sidebar styles */
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Sidebar pins styles */
+.pins {
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.pins h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.pins img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pins p {
+    font-size: 14px;
+}
+
+/* Footer styles */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+/* Footer links styles */
+.bottomlinks {
+    flex: 1;
+}
+
+.bottomlinks h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.bottomlinks ul {
+    list-style: none;
+    padding: 0;
+}
+
+.bottomlinks li {
+    margin-bottom: 5px;
+}
+
+.bottomlinks a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+}
+
+.bottomlinks a:hover {
+    text-decoration: underline;
+}
